@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Please enter the following information."
+        android:ems="10"
+        android:id="@+id/merchant_create_title_label"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        style="@style/Widget.AppCompat.EditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="OR"
+        android:ems="10"
+        android:id="@+id/or_label"
+        android:layout_below="@+id/merchant_routing_number"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Connect Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_merchant_account_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/merchant_venmo_email"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="17dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="9dp"
+        android:id="@+id/merchant_bank_account"
+        android:hint="bank account number"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@+id/merchant_create_title_label"
+        android:layout_alignEnd="@+id/or_label" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="9dp"
+        android:id="@+id/merchant_routing_number"
+        android:hint="routing number"
+        android:layout_below="@+id/merchant_bank_account"
+        android:layout_alignStart="@+id/merchant_bank_account" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="8dp"
+        android:id="@+id/merchant_venmo_email"
+        android:hint="Venmo email "
+        android:layout_below="@+id/or_label"
+        android:layout_alignEnd="@+id/or_label"
+        android:layout_marginEnd="14dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Please enter your birth date"
+        android:ems="10"
+        android:layout_marginTop="8dp"
+        android:id="@+id/birth_date_label"
+        android:layout_below="@+id/merchant_venmo_email"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/merchant_birth_date"
+        android:hint="yyyy-mm-dd"
+        android:inputType="text"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/birth_date_label"
+        android:layout_alignStart="@+id/or_label" />
+
+    <Button
+        android:text="Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/merchant_address_button"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/merchant_birth_date"
+        android:layout_alignStart="@+id/create_merchant_account_button"
+        android:layout_marginTop="14dp" />
+</RelativeLayout>

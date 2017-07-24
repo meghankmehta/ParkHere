@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sparkleusc.sparklesparkhere.SignUpActivity">
+
+    <Button
+        android:text="Create Profile!"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreateProfileButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp" />
+
+    <RadioButton
+        android:text="I Am Not a Robot!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RobotButton"
+        android:layout_alignBaseline="@+id/CreateProfileButton"
+        android:layout_alignBottom="@+id/CreateProfileButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/CreateProfileButton"
+        android:layout_alignEnd="@+id/textView">
+
+        <RadioButton
+            android:text="Lender"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbLender"
+            android:layout_below="@+id/radioGroup2"
+            android:layout_alignStart="@+id/uploadPictureET" />
+
+        <RadioButton
+            android:text="Seeker"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_above="@+id/CreateProfileButton"
+            android:layout_alignEnd="@+id/textView10"
+            android:layout_marginBottom="62dp"
+            android:id="@+id/rbSeeker"
+            android:layout_weight="0.22"
+            android:checked="true"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:id="@+id/PhoneNumberET"
+        android:layout_below="@+id/EmailAddressET"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:gravity="center"
+        android:id="@+id/uploadPictureET"
+        android:layout_below="@+id/passwordET"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/EmailAddressET"
+        android:layout_below="@+id/LastNameET"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:gravity="center"
+        android:id="@+id/passwordET"
+        android:layout_below="@+id/PhoneNumberET"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:gravity="center"
+        android:id="@+id/FirstNameET"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:text="Enter Last Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_alignBaseline="@+id/LastNameET"
+        android:layout_alignBottom="@+id/LastNameET"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:text="Enter Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_alignBaseline="@+id/passwordET"
+        android:layout_alignBottom="@+id/passwordET"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Enter Email Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:layout_alignBaseline="@+id/EmailAddressET"
+        android:layout_alignBottom="@+id/EmailAddressET"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Enter Phone Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_alignBaseline="@+id/PhoneNumberET"
+        android:layout_alignBottom="@+id/PhoneNumberET"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:text="Upload Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:layout_alignBaseline="@+id/uploadPictureET"
+        android:layout_alignBottom="@+id/uploadPictureET"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:text="Enter First Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignBaseline="@+id/FirstNameET"
+        android:layout_alignBottom="@+id/FirstNameET"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:gravity="center"
+        android:id="@+id/LastNameET"
+        android:layout_below="@+id/FirstNameET"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

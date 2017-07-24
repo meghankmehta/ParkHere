@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RatingBar
+        android:isScrollContainer="false"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekerRatingBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:isScrollContainer="false"
+
+        android:text="Leave a text review "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekerRatingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView23"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <EditText
+        android:isScrollContainer="false"
+
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Review"
+        android:ems="10"
+        android:id="@+id/editText17"
+        android:lines="4"
+        android:minLines="4"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:layout_width="fill_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/textView23"
+        android:layout_alignStart="@+id/textView21" />
+
+    <Button
+        android:isScrollContainer="false"
+
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button17" />
+
+    <TextView
+        android:isScrollContainer="false"
+
+        android:text="Thank you for parking with us"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView21"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:isScrollContainer="false"
+
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:id="@+id/textView27"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_above="@+id/textView22"
+        android:layout_alignEnd="@+id/button17" />
+
+    <TextView
+        android:isScrollContainer="false"
+
+        android:text="Please rate your experience "
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView22"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_above="@+id/seekerRatingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp" />
+
+
+</RelativeLayout>

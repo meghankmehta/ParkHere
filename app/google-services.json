@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "669213636153",
+    "firebase_url": "https://gleaming-motif-145305.firebaseio.com",
+    "project_id": "gleaming-motif-145305",
+    "storage_bucket": "gleaming-motif-145305.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669213636153:android:a6b4ab71c40dbb4f",
+        "android_client_info": {
+          "package_name": "com.sparkleusc.sparklesparkhere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669213636153-95bpsdobnrlnsi6t7u926hu4ie8reohe.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "669213636153-0p1e8tk75svo0tjr2qev7oqj8duasa6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_8YvD_mV8epie7eZ05BBvKy7dUUc8vx8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

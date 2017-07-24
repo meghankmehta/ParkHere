@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|numberDecimal"
+        android:hint="Price"
+        android:ems="10"
+        android:id="@+id/editText12"
+        android:layout_below="@+id/editText10"
+        android:layout_alignStart="@+id/editText10" />
+
+    <TextView
+        android:text="Cancellation Policies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:layout_above="@+id/cancellation_spinner"
+        android:layout_alignStart="@+id/button12"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Description"
+        android:ems="10"
+        android:id="@+id/editText16"
+        android:layout_below="@+id/editText12"
+        android:layout_alignStart="@+id/editText12"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:text="Covered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox6"
+        android:layout_above="@+id/textView20"
+        android:layout_alignStart="@+id/checkBox" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Parking Spot Title"
+        android:ems="10"
+        android:layout_marginTop="13dp"
+        android:id="@+id/editText10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:text="Truck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox3"
+        android:layout_alignStart="@+id/checkBox7"
+        android:layout_alignBottom="@+id/checkBox" />
+
+    <CheckBox
+        android:text="Tandem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox5"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/checkBox3"
+        android:layout_alignStart="@+id/checkBox3" />
+
+    <CheckBox
+        android:text="SUV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox4"
+        android:layout_alignBaseline="@+id/checkBox5"
+        android:layout_alignBottom="@+id/checkBox5"
+        android:layout_alignStart="@+id/checkBox" />
+
+    <CheckBox
+        android:text="Handicapped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/checkBox6"
+        android:layout_alignStart="@+id/editText16" />
+
+    <Spinner
+        android:id="@+id/cancellation_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button12"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Set Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressButton"
+        android:layout_below="@+id/editText16"
+        android:layout_alignEnd="@+id/checkBox6"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addAvailabilityButton"
+        android:text="Add Listing"
+        android:layout_below="@+id/editText16"
+        android:layout_toEndOf="@+id/checkBox" />
+
+    <CheckBox
+        android:text="Compact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox7"
+        android:layout_above="@+id/textView20"
+        android:layout_alignEnd="@+id/editText16" />
+
+    <Button
+        android:text="Add Photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button18"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/addressButton"
+        android:layout_alignEnd="@+id/addressButton" />
+
+    <Button
+        android:text="Ratings/Reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button19"
+        android:layout_alignBaseline="@+id/button18"
+        android:layout_alignBottom="@+id/button18"
+        android:layout_alignStart="@+id/checkBox5" />
+
+    <Button
+        android:text="Delete Spot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancellation_spinner"
+        android:layout_alignStart="@+id/button18"
+        android:id="@+id/deleteListingButton" />
+
+    <Button
+        android:text="Create Spot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/button12"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/checkBox7" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cast_album_art_placeholder"
+        android:id="@+id/listingImage6"
+        android:layout_alignTop="@+id/listingImage5"
+        android:layout_alignStart="@+id/listingImage4" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cast_album_art_placeholder"
+        android:id="@+id/listingImage2"
+        android:layout_marginEnd="47dp"
+        android:layout_alignTop="@+id/listingImage1"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Listing Photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView28"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cast_album_art_placeholder"
+        android:layout_marginStart="31dp"
+        android:id="@+id/listingImage1"
+        android:layout_below="@+id/textView28"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cast_album_art_placeholder"
+        android:id="@+id/listingImage3"
+        android:layout_below="@+id/listingImage1"
+        android:layout_alignStart="@+id/listingImage1" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cast_album_art_placeholder"
+        android:id="@+id/listingImage4"
+        android:layout_below="@+id/listingImage2"
+        android:layout_alignStart="@+id/listingImage2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cast_album_art_placeholder"
+        android:id="@+id/listingImage5"
+        android:layout_below="@+id/listingImage3"
+        android:layout_alignStart="@+id/listingImage3" />
+
+    <Button
+        android:text="Done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listingImage6"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button8" />
+</RelativeLayout>
